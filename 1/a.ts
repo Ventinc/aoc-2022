@@ -4,7 +4,7 @@ const foodCalories = input.split('\n');
 
 const foodCaloriesPerElves: number[][] = [[]];
 
-for (let foodCalorie of foodCalories) {
+for (const foodCalorie of foodCalories) {
   if (foodCalorie.length === 0) {
     foodCaloriesPerElves.push([]);
     continue;

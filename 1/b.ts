@@ -4,7 +4,7 @@ const foodCalories = input.split('\n');
 
 const foodCaloriesPerElves: number[][] = [[]];
 
-for (let foodCalorie of foodCalories) {
+for (const foodCalorie of foodCalories) {
   if (foodCalorie.length === 0) {
     foodCaloriesPerElves.push([]);
     continue;
@@ -23,9 +23,9 @@ const allFoodCalorieCarryingByElves = foodCaloriesPerElves.map(
 
 allFoodCalorieCarryingByElves.sort((a, b) => a - b);
 
-const one = allFoodCalorieCarryingByElves.pop();
-const two = allFoodCalorieCarryingByElves.pop();
-const three = allFoodCalorieCarryingByElves.pop();
+const one = allFoodCalorieCarryingByElves.pop() as number;
+const two = allFoodCalorieCarryingByElves.pop() as number;
+const three = allFoodCalorieCarryingByElves.pop() as number;
 
 console.log({ one, two, three });
 console.log(one + two + three);
