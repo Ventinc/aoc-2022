@@ -19,7 +19,6 @@ const rootDir: File = {
 let lastDirs = [rootDir];
 let currentDir = rootDir;
 const allDirs: File[] = [];
-let lastCommand: string = '';
 
 const findOrCreateFolder = (name: string) => {
   let folder = currentDir.files.find(
