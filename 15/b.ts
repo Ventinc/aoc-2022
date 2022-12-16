@@ -1,7 +1,5 @@
 const input = await Deno.readTextFile('input.txt');
 
-const rowToCheck = 2000000;
-
 const lines = input.split('\n').map((line) =>
   line
     .replace('Sensor at ', '')
